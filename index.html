@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <nav id="desktop-nav">
@@ -45,10 +46,10 @@
                 </div>
             </div>
             <div>
-              <image src="profileimg.png"/>
+              <img src="profileimg.png"/>
             </div>
         </section>
-    <section id="about" class="about">
+    <section id="about" class="about" data-aos="fade-up">
             <h3 class="title-sec">About</h3>
             <p>I began my journey in product design recently, and since then, I've been on a path of continuous learning
                 and improvement. My passion for creating intuitive and visually appealing designs has driven me to
@@ -61,7 +62,7 @@
      <section id="projects" class="projects">
   <h3 class="title-sec">Projects</h3>
   <section id="portfolio">
-    <div class="portfolio-container">
+    <div class="portfolio-container" data-aos="fade-up">
       <div class="portfolio-text">
         <h2>NFT Profile</h2>
         <p>
@@ -75,7 +76,7 @@
         <img src="Nft.jpg" alt="NFT Profile Image 1">
       </div>
     </div>
-    <div class="portfolio-container">
+    <div class="portfolio-container" data-aos="fade-up">
       <div class="portfolio-text">
         <h2>TinbuExpress</h2>
         <p>
@@ -87,7 +88,7 @@
         <img src="tinbu.png" alt="Tinbuexpress">
       </div>
     </div>
-    <div class="portfolio-container">
+    <div class="portfolio-container" data-aos="fade-up">
       <div class="portfolio-text">
         <h2>GossipWave</h2>
         <p>
@@ -99,7 +100,7 @@
         <img src="hotgist.png" alt="Tinbuexpress">
       </div>
     </div>
-    <div class="portfolio-container">
+    <div class="portfolio-container" data-aos="fade-up">
       <div class="portfolio-text">
         <h2>PiggyPal</h2>
         <p>
@@ -111,7 +112,7 @@
         <img src="kids.png" alt="Tinbuexpress">
       </div>
     </div>
-    <div class="portfolio-container">
+    <div class="portfolio-container" data-aos="fade-up">
       <div class="portfolio-text">
         <h2>Letters.</h2>
         <p>
@@ -126,7 +127,7 @@
   </section>
 </section>
 
-    <section id="contact" class="contacts">
+    <section id="contact" class="contacts" data-aos="fade-up">
       <h3 class="title-sec">Contact</h3>
       <div class="contact-container">
         <div class="contact-info">
@@ -150,5 +151,12 @@
         <p>Yetunde.io 2024</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, 
+    once: true, 
+  });
+</script>
   </body>
 </html>
